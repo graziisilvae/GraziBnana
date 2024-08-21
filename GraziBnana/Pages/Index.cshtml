@@ -22,6 +22,9 @@
                 <td>@student.Age</td>
                 <td>@student.Email</td>
             </tr>
+        <form method="post" asp-page-handler="Delete" asp-route-id="@student.Id">
+        <button type="submit" onclick="return confirm('Tem certeza que deseja deletar este registro?');">Deletar</button>
+        </form>
         }
     </table>
 </body>
