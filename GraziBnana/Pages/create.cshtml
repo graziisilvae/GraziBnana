@@ -1,0 +1,22 @@
+﻿@page
+@model StudentApp.Pages.CreateModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Student</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <h1>Adicionar Novo Estudante</h1>
+    <form method="post">
+        <label for="StudentName">Nome:</label>
+        <input type="text" name="StudentName" required /><br />
+        <label for="Age">Idade:</label>
+        <input type="number" name="Age" required /><br />
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" required /><br />
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+</html>

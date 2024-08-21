@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <h1>Lista de Estudantes</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Email</th>
+        </tr>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.StudentName</td>
+                <td>@student.Age</td>
+                <td>@student.Email</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
